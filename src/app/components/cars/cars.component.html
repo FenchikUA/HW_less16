@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="block-view">
+    <div class="title">
+      <h1>TOYOTA {{carName}}</h1>
+      <p>Ціна від <span>{{carPrice}}</span> грн.</p>
+    </div>
+    <div class="body-title">
+      <h2>Габаритні розміри та маса:</h2>
+      <p>Довжина: <span>{{parameters.length}}</span> мм.</p>
+      <p>Ширина: <span>{{parameters.width}}</span> мм.</p>
+      <p>Висота: <span>{{parameters.height}}</span> мм.</p>
+      <p>Маса: <span>{{parameters.mass}}</span> кг.</p>
+      <p>Кліренс: <span>{{parameters.clearance}}</span> мм.</p>
+      <p>Конструкція кузова: <span>{{parameters.body}}</span></p>
+    </div>
+  </div>
+  <div class="block-cars">
+    <div class="car"(click) = "carSelect('prado')">
+      <img src="https://toyota.com.ua/assets/cache_image/uploads/models/prado-menu-new_314x122_94f.png.webp">
+      <h2>LC PRADO</h2>
+      <p>Ціна від 1869865 грн.</p>
+    </div>
+    <div class="car"(click) = "carSelect('cruiser')">
+      <img src="https://toyota.com.ua/assets/cache_image/uploads/lc300/lc300_314x122_94f.png.webp">
+      <h2>LAND CRUISER</h2>
+      <p>Ціна від 2983710 грн.</p>
+    </div>
+    <div class="car"(click) = "carSelect('high')">
+      <img src="https://toyota.com.ua/assets/cache_image/uploads/highlanderne_314x122_94f.png.webp">
+      <h2>HIGHLANDER</h2>
+      <p>Ціна від 2033180 грн.</p>
+    </div>
+    <div class="car"(click) = "carSelect('rav')">
+      <img src="https://toyota.com.ua/assets/cache_image/uploads/rav4%20benzyn_314x122_94f.png.webp" alt="">
+      <h2>RAV4</h2>
+      <p>Ціна від 1077145 грн.</p>
+    </div>
+  </div>
+</div>
